@@ -1,1 +1,17 @@
-/* Empty file for template. Remember to edit only this file and not the HTML file */
+H1, H2, P{
+    background-color: rgb(235, 233, 233);
+    border: 3px solid rgb(0, 0, 0);
+}
+
+a:hover{
+    background-color: rgba(128, 128, 128, 0.371);
+    font-size: 17px;
+}
+
+a{
+    color: black;
+}
+
+:root{
+    background-color: rgb(185, 185, 187);
+}
