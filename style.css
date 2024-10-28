@@ -1,17 +1,14 @@
-Body{
-    background-color: seagreen;
-    color: white;
-    background-repeat: no-repeat;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+:root{
+    background-color: #877872;
+    margin: 10px;
+    border: 5px solid black;
 }
-.page-wrapper{
-    background-image: url(video/3422946-hd_1906_1080_30fps.mp4);
-    background-size: cover;
-    background-position: center;
+body{
+    background-image: url(Clown/Hero\ Image.png);
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: flex-start;
     width: 100%;
     height: 100%;
-    display:flex;
-    justify-content: center;
     align-items: center;
-    color: white;
 }
