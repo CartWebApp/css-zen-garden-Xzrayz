@@ -1,37 +1,151 @@
-h1{
-    text-align: center;
-    color:white;
-    flex-wrap: wrap;
-    font-size: xx-large;
-    
+/* Empty file for template. Remember to edit only this file and not the HTML file */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* applies font to all items */
+* {
+    font-family: "Libre Bodoni", serif;
 }
-:root{
-    background-color: rgb(126, 128, 100);
-}
-.page-wrapper{
-    background-image: url(Clown/Hero\ Image.png);
+
+/* background color and outside line */
+:root {
+    background-color: #e1a1cd;
+    margin: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    background-image: url(Japan/Fiji.png);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
-body{
-    background-image: url(Clown/Side\ Margin.png);
-    background-repeat: no-repeat;
-    float: right;
+
+/* inside line */
+body {
+    margin: 5px;
+    border: 10px solid rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    size: 100vw;
 }
-p{
-    text-transform: uppercase;
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
 }
-a:hover{
-    color:rgba(255, 255, 255, 0.536);
-    background-color: rgba(0, 0, 128, 0.249);
-    border-radius: 10px;
-    border-color: grey;
+
+a {
+    color: #ff6464;
 }
-a{
-    color: rgb(28, 43, 82);
+
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    order: -2;
+    color: lightpink;
 }
-a:link{
-    color: rgb(255, 34, 0);
+
+.intro [role=banner] h1 {
+    font-style: italic;
+    font-size: 96px;
+}
+
+
+/* inserts flower image */
+.intro [role=banner] h1::after {
+    position: absolute;
+    transform: translate(-50%, 125px);
+    left: 50%;
+    margin-left: -5px;
+
+    background-image: url(Japan/Blossom.avif);
+    background-position: center;
+    background-size: cover;
+
+    filter: sepia(60%) opacity(80%);
+
+    content: '';
+    width: 500px;
+    height: 500px;
+    outline: 5px solid rgb(243, 243, 243);
+    outline-offset: 5px;
+}
+
+.intro [role=banner] h2 {
+    padding-top: 450px;
+    margin-bottom: 0;
+    font-size: 64px;
+}
+
+.intro .summary {
+    font-size: 20px;
+    max-width: 700px;
+}
+
+.intro .summary :last-child {
+    font-size: 16px;
+}
+
+.intro #zen-preamble {
+    background-image: url(Japan/Dark.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    width: 100%;
+    height: 800px;
+
+    border: 5px solid rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.intro #zen-preamble h3 {
+    align-self: flex-start;
+
+    text-align: left;
+    width: 535px;
+
+    font-style: italic;
+    font-size: 36px;
+
+    margin-left: 10vw;
+    margin-top: 102px;
+}
+
+.intro #zen-preamble p:first-of-type {
+    align-self: flex-start;
+
+    width: 528px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    margin-left: 10vw;
+
+    text-align: left;
+}
+
+.intro #zen-preamble p:not(:first-of-type) {
+    align-self: flex-start;
+    
+
+    width: 528px;
+    margin: 5px;
+    margin-left: 10vw;
+
+    text-align: left;
+}
+
+aside {
+    order: -1;
+}
+
+aside .design-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+aside .design-selection h3 {
+    font-size: 64px;
+    font-style: italic;
 }
