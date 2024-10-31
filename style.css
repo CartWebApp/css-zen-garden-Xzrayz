@@ -5,7 +5,6 @@
 * {
     font-family: "Libre Bodoni", serif;
 }
-
 /* background color and outside line */
 :root {
     background-color: #e1a1cd;
@@ -15,7 +14,14 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+  
+.preamble{
+    background-color: rgba(0, 0, 0, 0.701);
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
 
+}
 /* inside line */
 body {
     margin: 5px;
@@ -30,7 +36,7 @@ body {
 }
 
 a {
-    color: #ff6464;
+    color: #D3D3FF;
 }
 
 .intro {
@@ -148,4 +154,14 @@ aside .design-selection {
 aside .design-selection h3 {
     font-size: 64px;
     font-style: italic;
+}
+h3{
+    background: url(Japan/Blossom.gif);
+    background-repeat: no-repeat;
+    font-size: xx-large;
+    background-blend-mode: color-burn;
+    text-align: left;
+    opacity: 60%;
+    border-radius: 20px;
+    margin-left: 5%;
 }
