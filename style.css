@@ -163,5 +163,20 @@ h3{
     text-align: left;
     opacity: 60%;
     border-radius: 20px;
-    margin-left: 5%;
+    margin-left: 10%;
+    
+}
+li{
+    text-align: left;
+    opacity: 60%;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+p{
+    text-align: left;
+    opacity: 60%;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 30%;
+    margin-bottom: 5%;
 }
