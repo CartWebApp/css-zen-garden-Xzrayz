@@ -166,7 +166,10 @@ h3{
     margin-left: 10%;
     
 }
+
 li{
+    border: #D3D3FF;
+    border-radius: 10%;
     text-align: left;
     opacity: 60%;
     border-radius: 20px;
@@ -177,6 +180,35 @@ p{
     opacity: 60%;
     border-radius: 20px;
     margin-left: 10%;
-    margin-right: 30%;
+    margin-right: 50%;
     margin-bottom: 5%;
+}
+.design-selection {
+    float: right;
+    flex-direction: column-reverse;
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    z-index: 1; /* Ensure text is above the pseudo-elements */
+}
+
+.design-selection::before,
+.design-selection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px; /* Side margin width */
+    background-color: lavender;
+    z-index: -1; /* Place behind the text */
+}
+
+.design-selection::before {
+    left: -40px; /* Move to the left */
+}
+
+.design-selection::after {
+    right: 3px; /* Move to the right */
 }
